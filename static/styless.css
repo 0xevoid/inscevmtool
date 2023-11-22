@@ -1,1 +1,139 @@
+/* styles.css */
 
+
+
+/* 主程式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1E1E26;
+    /* 黑色背景 */
+    color: #FFFFFF;
+    /* 文字顏色 */
+    margin: 0;
+}
+
+h1 {
+    color: #8B5FBF;
+    text-align: center;
+    /* 紫色標題 */
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #2E2E38;
+    /* 紫色表單背景 */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    background-color: #3E3E4E;
+    /* 紫色輸入框背景 */
+    color: #FFFFFF;
+    border: 1px solid #8B5FBF;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #8B5FBF;
+    /* 紫色按鈕 */
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #64408C;
+    /* 按鈕懸停時的顏色 */
+}
+
+
+
+/* 影印輸出內容 */
+#output {
+    margin-top: 20px;
+    background-color: #2E2E38;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#output h2 {
+    color: #8B5FBF;
+}
+
+#output pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #FFFFFF;
+}
+
+
+
+
+/* 側欄 */
+#sidebar {
+    float: right;
+    /* 將區域浮動至右方 */
+    max-width: 300px;
+    /* 右側區域最大寬度 */
+    padding: 20px;
+    background-color: #2E2E38;
+    border-radius: 10px;
+    margin-right: 30px;
+    /* 調整 margin-right 的值，使側欄向左移動 */
+}
+
+#author-info {
+    text-align: center;
+    /* 讓文字和圖片置中 */
+    display: flex;
+    /* 新增這一行，將內容排列在同一行 */
+    align-items: center;
+    /* 垂直置中 */
+}
+
+#author-info img {
+    width: 70px;
+    /* 設定圖片寬度 */
+    border-radius: 50%;
+    /* 讓圖片呈現圓形 */
+    margin-top: 10px;
+    /* 增加上方的間距 */
+    margin-left: 30px;
+}
+
+#sidebar p {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+#sidebar ol {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+#sidebar a {
+    color: #9F7AEA;
+    /* 超連結的顏色 */
+}
+
+#sidebar a:hover {
+    color: #7C4BCC;
+    /* 滑鼠懸停時的顏色 */
+}
