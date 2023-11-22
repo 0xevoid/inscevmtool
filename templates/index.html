@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVM Inscription Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+
+
+
+<body>
+    <h1>EVM Inscription Tool</h1>
+
+    <div id="sidebar">
+        <div id="author-info">
+            <p>Penulis Twitter<a href="https://twitter.com/vynski3" target="_blank">@vynski3</a></p>
+            <img src="{{ url_for('static', filename='author_image.png.jpg') }}">
+        </div>
+        <p>Tindakan pencegahan penggunaan:</p>
+        <ol>
+            <li>Hanya tersedia untuk rantai yang kompatibel dengan EVM, BSC untuk sementara tidak tersedia</li>
+            <li>Alamat RPC dapat ditemukan di <a href="https://chainlist.org/" target="_blank">https://chainlist.org/</a></li>
+            <li>Jika Anda memiliki pertanyaan penggunaan, silakan kirim pesan pribadi di Twitter</li>
+        </ol>
+    </div>
+
+    <formulir metode="post" action="/">
+        <label for="rpc">Alamat RPC:</label>
+        <input type="text" name="rpc" value="{{ rpc }}" required><br>
+
+        <label for="private_keys">Kunci pribadi (satu akun per baris):</label>
+        <textarea name="private_keys" required>{{ private_keys }}</textarea><br>
+
+        <label for="lim">Berapa banyak pukulan yang harus dimainkan:</label>
+        <input type="number" name="lim" value="{{ lim }}" required><br>
+
+        <label for="data">Isi prasasti:</label>
+        <input type="text" name="data" value="{{ data }}" required><br>
+
+        <input type="submit" value="Jalankan transaksi">
+    </bentuk>
+
+    <!-- Area tampilan -->
+    <div id="outputn">
+        <h2>Hasil eksekusi</h2>
+        <pre>{{ keluaran }}</pre>
+    </div>
+
+</body>
+
+</html>
